@@ -85,7 +85,6 @@ COMMIT;
 The app displays a map of your town with icons representing local landmarks. To add a custom icon, follow these steps:
 
 * TBA
-* TBA
 
 ## Contributing
 
