@@ -2,9 +2,22 @@
 
 This is a web application that allows users to view local landmarks in their town and add custom icons for each landmark. This project was created as a task for a group project.
 
+## Features
+* Display a map of Bohol
+* Display local Landmarks
+* Members of a group can add new landmarks for their town (TBA)
+* Custom icons for landmarks can be uploaded and displayed on the map (TBA)
+
+## Technologies Used
+* HTML, CSS, and JavaScript for the frontend
+* PHP for the backend
+* Mapbox API
+* Apache HTTP Server
+* MySQL Database
+
 ## Installation
 
-To run this web app locally, I recommend you to install this application on your machine. 
+To run this web app locally, I recommend you to install this applications on your machine. 
 
 * Laragon
 * TablePlus 
@@ -23,9 +36,11 @@ git clone https://github.com/your-username/local-landmark-web-app.git
 * Execute a query, click on the "Query" button at the top of the table window and enter your SQL command.
 
 ```sql
+--Create database
 CREATE SCHEMA IF NOT EXISTS `heritagesite` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
 USE `heritagesite` ;
 
+--Create table
 CREATE TABLE IF NOT EXISTS `heritagesite`.`map_heritage` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `type` VARCHAR(10) NOT NULL,
@@ -47,6 +62,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 ```
 
 ```sql
+--add Data
 INSERT INTO `map_heritage` (`type`, `property_description_title`, `property_description_content`, `property_description_sub_content`, `property_link_href`, `property_link_label`, `property_icon`, `geometry_type`, `coordinate_y`, `coordinate_x`, `img_src`) VALUES(
 'Feature', 
 'Hinagdanan Cave (Bingag, Dauis, Bohol)',
