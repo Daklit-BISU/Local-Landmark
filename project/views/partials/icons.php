@@ -43,7 +43,8 @@
                         // To add a new image to the style at runtime see
                         // https://docs.mapbox.com/mapbox-gl-js/example/add-image/
                         'icon-image': `${symbol}`,
-                        'icon-allow-overlap': true
+                        'icon-allow-overlap': true,
+                        'icon-size': 1.2
                     },
                     'filter': ['==', 'icon', symbol]
                 });

@@ -13,20 +13,20 @@ overlay.addEventListener("click", () => {
 });
 
 const bounds = [
-  [123.6525, 9.4725], // Southwest coordinates
+  [123.9525, 9.3725], // Southwest coordinates
   [124.7081, 10.2574] // Northeast coordinates
 ];
 
-mapboxgl.accessToken = 'pk.eyJ1IjoicmljejE3IiwiYSI6ImNrMnU0bHpoYjAzZHMzb2x0enV3a2x4ZXoifQ.9KwRS6b10lTj5Aqm9uqQQw';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGFrbGl0IiwiYSI6ImNsZWNxanJhaDAwMjIzcGt4cjF3MmZ4czgifQ.db8Az0uKza9pFbTrISFKEw';
 
 const filterGroup = document.getElementById('list');
 const map = new mapboxgl.Map({
   container: 'map',
   // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-  style: 'mapbox://styles/mapbox/streets-v12',
+  style: 'mapbox://styles/daklit/clf56ornt008l01pe6bbhm4d6',
   center: [124.196320, 9.845745],
-  zoom: 9.2,
-  maxBounds: bounds
+  zoom: 9,
+  //maxBounds: bounds
 });
 
 map.addControl(new mapboxgl.NavigationControl());
