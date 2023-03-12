@@ -23,9 +23,11 @@ git clone https://github.com/your-username/local-landmark-web-app.git
 * Execute a query, click on the "Query" button at the top of the table window and enter your SQL command.
 
 ```sql
+--Create database
 CREATE SCHEMA IF NOT EXISTS `heritagesite` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
 USE `heritagesite` ;
 
+--Create table
 CREATE TABLE IF NOT EXISTS `heritagesite`.`map_heritage` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `type` VARCHAR(10) NOT NULL,
@@ -47,6 +49,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 ```
 
 ```sql
+--add Data
 INSERT INTO `map_heritage` (`type`, `property_description_title`, `property_description_content`, `property_description_sub_content`, `property_link_href`, `property_link_label`, `property_icon`, `geometry_type`, `coordinate_y`, `coordinate_x`, `img_src`) VALUES(
 'Feature', 
 'Hinagdanan Cave (Bingag, Dauis, Bohol)',
