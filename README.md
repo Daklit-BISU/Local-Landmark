@@ -1,5 +1,7 @@
 # Local Landmark Web App
 
+http://local-landmark.epizy.com/
+
 This is a web application that allows users to view local landmarks in their town and add custom icons for each landmark. This project was created as a task for a group project.
 
 ## Features
