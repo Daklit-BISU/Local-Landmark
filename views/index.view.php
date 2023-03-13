@@ -1,14 +1,19 @@
-    <?php require("./views/partials/head.php")?>
+<?php require('./views/partials/head.php') ?>
 
-        <?php require("./views/partials/nav.php")?>
 
-        <?php require("./views/partials/banner.php")?>
+<body>
 
-        <main>
-            <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-            <!-- Your content -->
-                <p>Hello World!</p>
-            </div>
-        </main>
+  <div id="map"></div>
+  <div id="coords-container"></div>
+  <section class="overlay"></section>
+  <li id="list" class="filter-group"></li>
 
-    <?php require("./views/partials/foot.php")?>
+  <?php include('./views/partials/nav.php'); ?>
+
+  <script src="./views/partials/app.js"></script>
+
+  <?php include('./views/partials/icons.php'); ?>
+
+</body>
+
+</html>

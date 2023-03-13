@@ -1,7 +1,9 @@
 <?php
 
-$heading = 'Home';
+$config = require('config.php');
+$db = new Database($config['ken_database'], 'root', 'Darkking24_');
 
-include "views/index.view.php";
+$array_maps = $db->query('SELECT * FROM map_heritage')->findAll();
 
+include("./views/index.view.php");
 ?>

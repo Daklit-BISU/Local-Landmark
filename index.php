@@ -1,10 +1,11 @@
-<?php 
+<?php
 include './functions.php';
 include './Database.php';
 include './router.php';
+
 routeToController($uri, $routes);
 
- 
+
 // $id = $_GET['id']; 
 // $query = "SELECT * From posts where id = ?;";
 

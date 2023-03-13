@@ -59,8 +59,7 @@ CREATE TABLE IF NOT EXISTS `heritagesite`.`map_heritage` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 0
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
 ```
 
 ```sql
