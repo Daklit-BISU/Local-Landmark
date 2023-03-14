@@ -10,12 +10,8 @@
     
     <link rel="stylesheet" href="./views/partials/app.css" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    
-    <style>
-        @tailwind base;
-        @tailwind components;
-        @tailwind utilities;
-        </style>
+
+    <!-- <script src="http://cdn.tailwindcss.com?plugins=forms"></script> -->
 
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
