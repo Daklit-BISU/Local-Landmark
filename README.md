@@ -1,6 +1,7 @@
 # Local Landmark Web App
-
 http://local-landmark.epizy.com/
+
+<p align="center"><a name="#README-top" href="Images/title-banner-removebg.png"> <img src="img/local-landmark.png" alt="Local landmark Screenshot"/> </a> </p>
 
 This is a web application that allows users to view local landmarks in their town and add custom icons for each landmark. This project was created as a task for a group project.
 
@@ -46,15 +47,15 @@ USE `heritagesite` ;
 CREATE TABLE IF NOT EXISTS `heritagesite`.`map_heritage` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `type` VARCHAR(10) NOT NULL,
-  `property_description_title` VARCHAR(300) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_bin' NOT NULL,
-  `property_description_content` VARCHAR(1000) NOT NULL,
+  `property_description_title` TEXT NOT NULL,
+  `property_description_content` TEXT NOT NULL,
   `property_description_sub_content` TEXT NOT NULL,
   `property_link_href` TEXT NOT NULL,
   `property_link_label` TEXT NOT NULL,
-  `property_icon` VARCHAR(50) NOT NULL,
+  `property_icon` TEXT NOT NULL,
   `geometry_type` VARCHAR(50) NOT NULL,
   `coordinate_y` VARCHAR(50) NOT NULL,
-  `coordinate_x` TEXT NOT NULL,
+  `coordinate_x` VARCHAR(50) NOT NULL,
   `img_src` TEXT NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
@@ -94,3 +95,5 @@ If you'd like to contribute to this project, feel free to submit a pull request 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+<p align="right">(<a href="#README-top">back to top</a>)</p>

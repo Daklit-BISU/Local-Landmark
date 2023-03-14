@@ -5,11 +5,10 @@
 <body>
 
     <?php include('./views/partials/nav.php'); ?>
-
     <main>
-        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-7">
+        <div class="absolute top-100    ">
             <!-- Your content -->
-            <h1 class="text-2xl font-bold">
+            <h1 class="absolute inset-x-0 top-100 h-16 text-2xl font-bold">
                 404 Not Found
             </h1>
             <p class="mt-4">

@@ -42,7 +42,7 @@
                 </li>
                 <!-- from: maketechstuff.com -->
                 <li class="list">
-                    <label href="#" class="nav-link">
+                    <label href="#" class="nav-link ">
                         <i class='bx bx-current-location icon'></i>
                         <span class="link">Coordinates</span>
                         <div class="toggle-container">
