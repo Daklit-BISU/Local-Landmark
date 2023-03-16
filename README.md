@@ -31,7 +31,7 @@ Once you have those installed, follow these steps:
 * Navigate to the root directory of the Apache local server on Laragon.
 * Clone this repository to the root directory.
 ``` git
-git clone https://github.com/your-username/local-landmark-web-app.git](https://github.com/Daklit-BISU/local-landmark.git
+git clone https://github.com/Daklit-BISU/Local-Landmark.git
 ```
 ## Setting up the Database
 * Open TablePlus, Click on the "+" button at the top left corner of the window to create a new database connection.
