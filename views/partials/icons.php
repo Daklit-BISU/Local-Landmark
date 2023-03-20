@@ -1,6 +1,7 @@
 <script>
+    
     map.on('load', () => {
-        const maps = JSON.parse('<?php echo json_encode($array_maps); ?>')
+        const maps = JSON.parse('<?php echo json_encode($landmarks); ?>')
         const features = maps.map(({ coordinate_x, coordinate_y, geometry_type, property_icon, type, img_src, property_description_title, property_description_content, property_link_href, property_link_label, property_description_sub_content }) => ({
             'type': type,
             'properties': {
@@ -76,28 +77,6 @@
                 // Change it back to a pointer when it leaves.
                 map.on('mouseleave', layerID, () => {
                     map.getCanvas().style.cursor = '';
-                });
-
-                // Add checkbox and label elements for the layer.
-                const input = document.createElement('input');
-                input.type = 'checkbox';
-                input.id = layerID;
-                input.checked = true;
-                filterGroup.appendChild(input);
-
-                const label = document.createElement('label');
-                label.setAttribute('for', layerID);
-                label.textContent = symbol;
-                filterGroup.appendChild(label);
-
-                // When the checkbox changes, update the visibility of the layer.
-                input.addEventListener('change', (e) => {
-                    console.log(e, 'e')
-                    map.setLayoutProperty(
-                        layerID,
-                        'visibility',
-                        e.target.checked ? 'visible' : 'none'
-                    );
                 });
             }
         }

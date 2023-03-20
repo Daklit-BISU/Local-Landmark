@@ -1,30 +1,22 @@
 <?php require("./views/partials/head.php") ?>
 
-<section class="overlay"></section>
-
-<body>
-
+<body class="bg-blue-200">
+    
     <?php include('./views/partials/nav.php'); ?>
-    <main>
-        <div class="absolute top-100    ">
-            <!-- Your content -->
-            <h1 class="absolute inset-x-0 top-100 h-16 text-2xl font-bold">
-                404 Not Found
-            </h1>
-            <p class="mt-4">
-                Page does not exist<br>
-                <a href="/" class="text-blue-500 hover:underline">
-                    Return to the homepage
-                </a>
-            </p>
+    <section class="overlay"></section>
+
+    <div class="flex items-center justify-center max-w-md mx-auto p-4 bg-gray-100 rounded-lg shadow-lg sm:max-w-sm md:max-w-lg lg:max-w-xl mt-20 ">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold text-gray-900">404</h1>
+            <h2 class="text-3xl font-bold text-gray-900">Page Not Found</h2>
+            <p class="mt-4 text-gray-600">Oops! The page you are looking for does not exist. It might have been moved or deleted.</p>
+            <a href="/" class="mt-8 inline-block px-6 py-4 text-white font-bold bg-blue-500 rounded-lg hover:bg-blue-700">Go back to the homepage</a>
         </div>
-    </main>
+    </div>
+    
+    <script src="./views/partials/app.js"></script>
+
 </body>
 
-<?php include('./views/partials/nav.php'); ?>
-
-<script src="./views/partials/app.js"></script>
-
-<?php include('./views/partials/icons.php'); ?>
 
 </html>
