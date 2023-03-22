@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="/landmarks/create" class="nav-link">
+                    <a href="/create" class="nav-link">
                         <i class='bx bx-plus-circle icon'></i>
                         <span class="link">Add Landmark</span>
                     </a>
