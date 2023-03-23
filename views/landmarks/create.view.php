@@ -10,7 +10,7 @@
       <form class="bg-white p-6 rounded-lg shadow-lg w-96 mt-16" 
         method="post" 
         action="/landmark">
-        <h1 class="text-2xl font-bold mb-4">Add a new landmark</h1>
+        <h1 class="text-2xl font-bold mb-4">Add a new landmark (Functionality-TBA)</h1>
 
         <div class="mb-4 px-4 w-full">
           <label for="type" class="block text-gray-700 mb-2">Type</label>

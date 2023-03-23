@@ -1,5 +1,4 @@
 <script>
-    
     map.on('load', () => {
         const maps = JSON.parse('<?php echo json_encode($landmarks); ?>')
         const features = maps.map(({ coordinate_x, coordinate_y, geometry_type, property_icon, type, img_src, property_description_title, property_description_content, property_link_href, property_link_label, property_description_sub_content }) => ({

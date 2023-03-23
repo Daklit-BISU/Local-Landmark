@@ -25,19 +25,19 @@ class Database
         return $this;
     }
 
-    public function get()
+    public function fetchAll()
     {
         return $this->statement->fetchAll();
     }
 
-    public function find()
+    public function fetch()
     {
         return $this->statement->fetch();
     }
 
     public function findOrFail()
     {
-        $result = $this->find();
+        $result = $this->fetch();
 
         if (! $result) {
             abort();
