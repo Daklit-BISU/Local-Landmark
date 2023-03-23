@@ -12,5 +12,5 @@ $router->get('/landmark', 'controllers/landmarks/show.php');
 $router->delete('/landmark', 'controllers/landmarks/destroy.php');
 
 $router->get('/edit', 'controllers/landmarks/edit.php');
-$router->patch('/landmark', 'controllers/landmarks/update.php');
+$router->patch('/', 'controllers/update.php');
 

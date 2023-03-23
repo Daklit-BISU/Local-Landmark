@@ -3,7 +3,7 @@ use Core\App;
 
 $db = App::resolve(Core\Database::class);
 
-$landmarks = $db->query('SELECT * FROM map_heritage')->get();
+$landmarks = $db->query('SELECT * FROM map_heritage')->fetchAll();
 
 // dd($landmarks);
 
