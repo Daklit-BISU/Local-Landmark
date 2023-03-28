@@ -8,7 +8,7 @@ $container = new Container;
 
 $container->bind('Core\Database', function(){
     $config = include base_path('config.php');
-    return new Database($config['ken_database'],'root', 'Darkking24_');
+    return new Database($config['ken_database'],'root', 'password');
 });
 
 App::setContainer($container);
