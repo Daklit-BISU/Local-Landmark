@@ -4,7 +4,7 @@
       
       <div id="map"></div>
       <?php include('./views/partials/nav.php'); ?>
-      
+
       <div id="coords-container"></div>
       <section class="overlay"></section>
       <li id="list" class="filter-group"></li>
